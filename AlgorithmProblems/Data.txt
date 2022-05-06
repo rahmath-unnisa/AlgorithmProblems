@@ -1,1 +1,1 @@
-﻿"Whatever you are,be a good one."
+﻿{Whatever, you, are,be, a, good, one}

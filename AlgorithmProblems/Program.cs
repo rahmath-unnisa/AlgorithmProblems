@@ -3,24 +3,25 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Welcome To Algorithm Programs");
-        bool end = true;
-        Console.WriteLine("1.BinarySearch\n2.End the Program");
-        while (end == true)
+        Console.WriteLine("                                   WELCOME TO ALGORITHM PROGRAMS                                   ");
+        bool check = true;
+        const string path = @"D:\Practice Problems\AlgorithmProblems\AlgorithmProblems\AlgorithmProblems\Data.txt";
+        Console.WriteLine("1.Binary Search\n2.Exit");
+        while (check)
         {
-            Console.WriteLine("Take an option to execute");
+            Console.Write("\nEnter an option to execute :");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
-                    BasicAlgorithms basic = new BasicAlgorithms();
-                    basic.Binary();
-                    break;
-                case 2:
-                    end = false;
+                    BinarySearch binary = new BinarySearch();
+                    string[] inputArray = File.ReadAllLines(path);
+                    Console.WriteLine("Enter a word to search :");
+                    string word = Console.ReadLine();
+                    binary.Binary(inputArray, word);
                     break;
                 default:
-                    Console.WriteLine("Enter Proper Option To Execute");
+                    check = false;
                     break;
             }
         }

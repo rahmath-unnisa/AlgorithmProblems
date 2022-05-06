@@ -1,4 +1,6 @@
 ﻿using AlgorithmProblems;
+using AlgorithmProblems.Utility;
+
 class Program
 {
     static void Main(string[] args)
@@ -6,7 +8,7 @@ class Program
         Console.WriteLine("                                   WELCOME TO ALGORITHM PROGRAMS                                   ");
         bool check = true;
         const string path = @"D:\Practice Problems\AlgorithmProblems\AlgorithmProblems\AlgorithmProblems\Data.txt";
-        Console.WriteLine("1.Binary Search\n2.Exit");
+        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3.Exit");
         while (check)
         {
             Console.Write("\nEnter an option to execute :");
@@ -19,6 +21,10 @@ class Program
                     Console.WriteLine("Enter a word to search :");
                     string word = Console.ReadLine();
                     binary.Binary(inputArray, word);
+                    break;
+                case 2:
+                    InsertionSort sort = new InsertionSort();
+                    sort.Sort();
                     break;
                 default:
                     check = false;

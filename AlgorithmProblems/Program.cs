@@ -8,7 +8,7 @@ class Program
         Console.WriteLine("                                   WELCOME TO ALGORITHM PROGRAMS                                   ");
         bool check = true;
         const string path = @"D:\Practice Problems\AlgorithmProblems\AlgorithmProblems\AlgorithmProblems\Data.txt";
-        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Exit");
+        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Checking Anagram \n5.Exit");
         while (check)
         {
             Console.Write("\nEnter an option to execute :");
@@ -29,6 +29,13 @@ class Program
                 case 3:
                     BubbleSort bubble = new BubbleSort();
                     bubble.Sort();
+                    break;
+                case 4:
+                    Anagram anagram = new Anagram();
+                    anagram.CheckAnagram();
+                    break;
+                case 5:
+                    Console.WriteLine("Enter The Correct Option");
                     break;
                 default:
                     check = false;

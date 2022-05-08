@@ -8,7 +8,7 @@ class Program
         Console.WriteLine("                                   WELCOME TO ALGORITHM PROGRAMS                                   ");
         bool check = true;
         const string path = @"D:\Practice Problems\AlgorithmProblems\AlgorithmProblems\AlgorithmProblems\Data.txt";
-        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Checking Anagram \n5.Exit");
+        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Checking Anagram \n5.Prime Number In Range \n6.Exit");
         while (check)
         {
             Console.Write("\nEnter an option to execute :");
@@ -35,6 +35,10 @@ class Program
                     anagram.CheckAnagram();
                     break;
                 case 5:
+                    PrimeNumber primeNumber=new PrimeNumber();
+                    primeNumber.PrimeNumberInRange();
+                    break;
+                case 6:
                     Console.WriteLine("Enter The Correct Option");
                     break;
                 default:

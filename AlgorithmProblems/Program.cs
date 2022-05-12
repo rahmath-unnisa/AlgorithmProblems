@@ -8,7 +8,7 @@ class Program
         Console.WriteLine("                                   WELCOME TO ALGORITHM PROGRAMS                                   ");
         bool check = true;
         const string path = @"D:\Practice Problems\AlgorithmProblems\AlgorithmProblems\AlgorithmProblems\Data.txt";
-        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Checking Anagram \n5.Prime Number In Range \n6. Palindrome \n7. Merge Sort \n8. Exit");
+        Console.WriteLine("1.Binary Search\n2. Insertion Sort \n3. Bubble Sort \n4.Checking Anagram \n5.Prime Number In Range \n6. Palindrome \n7. Merge Sort \n8. Message Demonstration \n9. Exit");
         while (check)
         {
             Console.Write("\nEnter an option to execute :");
@@ -51,6 +51,10 @@ class Program
                     merge1.Sorting(arr1);
                     break;
                 case 8:
+                    MessageDemonstration message = new MessageDemonstration();
+                    message.Message();
+                    break;
+                case 9:
                     Console.WriteLine("Enter The Correct Option");
                     break;
                 default:
